@@ -13,12 +13,6 @@ Vue.config.debug = debug
 
 // Build the store
 export default new Vuex.Store({
-  state: {},
-
-  mutations: {},
-
-  getters: {},
-
   actions: {
     newOrder ({commit}, event) {
       commit('NEW_ORDER', event.target.dataset.type)

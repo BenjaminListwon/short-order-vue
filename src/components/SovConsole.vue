@@ -12,8 +12,6 @@ import { mapState } from 'vuex'
 
 export default {
   name: 'SovConsole',
-  data () { return {} },
-  methods: {},
   computed: {
     ...mapState({
       menuItems: ({ menu }) => menu.items,

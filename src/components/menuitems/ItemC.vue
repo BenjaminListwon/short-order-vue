@@ -10,7 +10,6 @@ import { mapActions } from 'vuex'
 
 export default {
   name: 'ItemC',
-  data () { return {} },
   props: ['order'],
   methods: {
     sendOrder (event) {

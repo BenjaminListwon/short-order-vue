@@ -30,7 +30,6 @@ import { mapActions, mapState } from 'vuex'
 
 export default {
   name: 'SovOrders',
-  data () { return {} },
   components: {
     ItemA,
     ItemB,
