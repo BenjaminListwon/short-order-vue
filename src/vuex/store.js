@@ -5,12 +5,11 @@ import Vuex from 'vuex'
 import menu from './modules/menu'
 import orders from './modules/orders'
 
-// Initialize
-Vue.use(Vuex)
-Vue.config.debug = true
-
 const debug = process.env.NODE_ENV !== 'production'
 
+// Initialize
+Vue.use(Vuex)
+Vue.config.debug = debug
 
 // Build the store
 export default new Vuex.Store({
@@ -21,11 +20,11 @@ export default new Vuex.Store({
   getters: {},
 
   actions: {
-    newOrder({commit}, event) {
+    newOrder ({commit}, event) {
       commit('NEW_ORDER', event.target.dataset.type)
     },
-    orderUp({commit}, id) {
-      commit('CLEAR_ORDER', id);
+    orderUp ({commit}, id) {
+      commit('CLEAR_ORDER', id)
     }
   },
 
@@ -36,4 +35,4 @@ export default new Vuex.Store({
 
   strict: debug
 
-});
+})

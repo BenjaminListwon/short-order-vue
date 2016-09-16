@@ -1,9 +1,9 @@
 <template>
-  <div class="sov-orders">
+  <div class="sov-menu box">
     <header>
-      <h1>Menu</h1>
+      <h1 class="title is-3">Menu</h1>
     </header>
-
+    
     <ul>
         <li v-for="item in menuItems">
           {{item.title}}
@@ -18,7 +18,7 @@ import { mapActions, mapState } from 'vuex'
 
 export default {
   name: 'SovMenu',
-  data() { return {} },
+  data () { return {} },
   methods: {
     ...mapActions(['newOrder'])
   },
@@ -27,6 +27,6 @@ export default {
       menuItems: ({ menu }) => menu.items
     })
   }
-};
-
+}
 </script>
+

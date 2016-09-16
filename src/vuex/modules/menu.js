@@ -3,18 +3,18 @@ const state = {
   items: [
     {
       id: 1,
-      title: "Bowl of chocolate ice cream",
-      type: "ItemA"
+      title: 'Bowl of chocolate ice cream',
+      type: 'ItemA'
     },
     {
       id: 2,
-      title: "Salad",
-      type: "ItemB"
+      title: 'Salad',
+      type: 'ItemB'
     },
     {
       id: 3,
-      title: "Iced tea",
-      type: "ItemC"
+      title: 'Iced tea',
+      type: 'ItemC'
     }
   ]
 }

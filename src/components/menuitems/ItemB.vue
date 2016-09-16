@@ -1,10 +1,8 @@
 <template>
-  <div class="box">
-    <header>
-      <h1>Cow Feed</h1>
-    </header>
+  <li class="cow">
+    Cow Feed
     <a class="button is-success" @click="sendOrder">Order Up!</a>
-  </div>
+  </li>
 </template>
 
 <script>
@@ -12,14 +10,17 @@ import { mapActions } from 'vuex'
 
 export default {
   name: 'ItemB',
-  data() { return {} },
+  data () { return {} },
   props: ['order'],
   methods: {
-    sendOrder() {
-      this.orderUp(this.order.id);
+    sendOrder () {
+      if (window.confirm('Did you remember the Love Apples?')) {
+        this.orderUp(this.order.id)
+      } else {
+        return false
+      }
     },
     ...mapActions(['orderUp'])
   }
-};
-
+}
 </script>
